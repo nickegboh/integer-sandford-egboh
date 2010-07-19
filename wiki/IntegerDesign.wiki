@@ -19,8 +19,8 @@ This results in O(m*n) for both multiplication and division.
 
 Pow was implemented by using the following insights:
 
-b^2e == (b*b)^e
+b^2e^ == b*b^e^
 
-b^2e + 1 == ((b*b)^e) * b
+b^2e + 1^ == b*b^e^ times b
 
 Thus, pow is O(ln(n)) ignoring the multiplication's order.
