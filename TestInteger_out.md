@@ -1,0 +1,33 @@
+
+```
+==1235== Memcheck, a memory error detector.
+==1235== Copyright (C) 2002-2008, and GNU GPL'd, by Julian Seward et al.
+==1235== Using LibVEX rev 1878, a library for dynamic binary translation.
+==1235== Copyright (C) 2004-2008, and GNU GPL'd, by OpenWorks LLP.
+==1235== Using valgrind-3.4.0, a dynamic binary instrumentation framework.
+==1235== Copyright (C) 2000-2008, and GNU GPL'd, by Julian Seward et al.
+==1235== For more details, rerun with: -v
+==1235== 
+TestInteger.c++
+..........................................
+
+
+OK (42 tests)
+
+
+Done.
+==1235== 
+==1235== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 21 from 1)
+==1235== malloc/free: in use at exit: 122,880 bytes in 6 blocks.
+==1235== malloc/free: 1,392 allocs, 1,386 frees, 262,871 bytes allocated.
+==1235== For counts of detected errors, rerun with: -v
+==1235== searching for pointers to 6 not-freed blocks.
+==1235== checked 124,948 bytes.
+==1235== 
+==1235== LEAK SUMMARY:
+==1235==    definitely lost: 0 bytes in 0 blocks.
+==1235==      possibly lost: 0 bytes in 0 blocks.
+==1235==    still reachable: 122,880 bytes in 6 blocks.
+==1235==         suppressed: 0 bytes in 0 blocks.
+==1235== Rerun with --leak-check=full to see details of leaked memory.
+```
